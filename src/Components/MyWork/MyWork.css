@@ -1,0 +1,132 @@
+.mywork{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 100px 10%;
+  
+}
+
+.mywork-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+.mywork-container img{
+    width: 100%;
+    transition: 0.3s;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.mywork-container img:hover{
+    transform: scale(1.10);
+    border: 4px solid #13869a;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.mywork-showmore{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 50px;
+    border: 2px solid white;
+    padding: 20px 40px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    transition: 0.6s;
+    cursor: pointer;
+}
+.mywork-showmore img{
+    width: 25px;
+}
+.mywork-showmore:hover{
+    gap: 30px;
+    transform: scale(1.1);
+    transition: 0.6s;
+    border-color: aqua;
+    
+}
+@media(max-width:768px){
+    .mywork{
+        gap: 50px;
+        margin: 50px 6%;
+        align-items: start;
+    }
+    
+    .mywork-container{
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    .mywork-showmore{
+        padding: 15px 30px;
+        font-size: 16px;
+        margin: 10px auto;
+       
+    }
+    .mywork-showmore:hover{
+        gap: 20px;
+    }
+}
+
+
+.mywork {
+    position: relative;
+  }
+  
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    max-width: 90%;
+    max-height: 90%;
+  }
+  
+  .modal-content img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .mywork-container {
+    filter: none;
+    transition: filter 0.3s;
+  }
+  
+  .mywork-container.blur {
+    filter: blur(8px);
+  }
+
+  .msg{
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 31px;
+    color: rgb(152, 151, 151);
+  }
+
+  .arrowed{
+    font-size: 39px;
+    margin-bottom: -13px;
+    margin-top: -8px;
+    color: aquamarine;
+  }
+
+  .arrowed2{
+    font-size: 39px;
+    margin-bottom: -13px;
+    margin-top: -8px;
+    color: aquamarine;
+    margin-left: -18px;
+  }
